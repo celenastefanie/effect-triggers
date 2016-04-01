@@ -97,9 +97,10 @@ div {
 }
 
 @keyframes bounce {
+
   25% {
 
-    top: 0px;
+    top: 0;
     right: 100px;
   }
 
@@ -152,10 +153,14 @@ div {
 }
 
 @keyframes drop {
+
   0% {
+
     max-height: 0;
   }
+
   100% {
+
     max-height: 1.5em;
   }
 }
