@@ -27,7 +27,7 @@ $btnBounce.on('click', function (e) {
 });
 
 $btnBounce.on('animationend', '.circle-clicked', function () {
-  $(this).removeClass();
+  $(this).removeClass('circle-clicked');
 });
 
 $btnAppend.on('click', function (e) {
