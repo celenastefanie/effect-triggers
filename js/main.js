@@ -8,6 +8,7 @@ var $btnBounce = $('.btn-bounce');
 var $circle = $('.circle');
 var $btnAppend = $('.btn-append');
 var $list = $('.list');
+var $li = $('<li>');
 
 $btnShowHide.on('click', function (e) {
   $box.toggleClass('is-clicked');
@@ -22,7 +23,7 @@ $btnCollapse.on('click', function (e) {
 });
 
 $btnBounce.on('click', function (e) {
-  $circle.toggleClass('circle-clicked');
+  $circle.addClass('circle-clicked');
 });
 
 $btnBounce.on('animationend', '.circle-clicked', function () {
@@ -30,7 +31,5 @@ $btnBounce.on('animationend', '.circle-clicked', function () {
 });
 
 $btnAppend.on('click', function (e) {
-  var $li = $('<li>');
-  
   $list.append($li);
 });
