@@ -97,25 +97,30 @@ div {
 }
 
 @keyframes bounce {
-  0% {
-
-  }
   25% {
+
     top: 0px;
     right: 100px;
   }
+
   50% {
+
     top: 50px;
     right: 150px;
   }
+
   75% {
+
     top: 5px;
     right: 200px;
   }
+
   100% {
+
     top: 40px;
     right: 250px;
   }
+
 }
 
 .list {
