@@ -35,6 +35,12 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+
+  transition: all .5s linear;
+}
+
+.is-clicked {
+  opacity: 1;
 }
 
 .diamond {
@@ -45,6 +51,12 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+
+  transition: all .5s linear;
+}
+
+.diamond-clicked {
+  right: 50px;
 }
 
 .panel {
@@ -58,6 +70,12 @@ div {
 
   color: darkgoldenrod;
   text-align: center;
+
+  transition: all .5s linear;
+}
+
+.panel-clicked {
+  max-height: 0;
 }
 
 .panel h2 {
@@ -72,6 +90,32 @@ div {
 
   background-color: orange;
   border-radius: 50%;
+}
+
+.circle-clicked {
+  animation: bounce .5s forwards;
+}
+
+@keyframes bounce {
+  0% {
+
+  }
+  25% {
+    top: 0px;
+    right: 100px;
+  }
+  50% {
+    top: 50px;
+    right: 150px;
+  }
+  75% {
+    top: 5px;
+    right: 200px;
+  }
+  100% {
+    top: 40px;
+    right: 250px;
+  }
 }
 
 .list {
@@ -91,11 +135,22 @@ div {
 .list li {
   overflow: hidden;
   padding: 0 0.5em;
-  max-height: 0;
+  max-height: 10;
 
   background-color: plum;
   border: 1px solid mediumpurple;
   overflow: hidden;
 
   color: mediumpurple;
+
+  animation: drop .5s repeat;
+}
+
+@keyframes drop {
+  0% {
+    max-height: 0;
+  }
+  100% {
+    max-height: 100%;
+  }
 }
